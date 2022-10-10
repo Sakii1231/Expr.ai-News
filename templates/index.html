@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Yawning Bewitched Barracuda</title>
+    <meta property="og:title" content="Yawning Bewitched Barracuda" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="/static/css/home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Header" class="home-header">
+          <img
+            src="/static/css/expr.ai-200h.png"
+            alt="image"
+            class="home-image"
+          />
+          <div class="home-nav">
+            <nav
+              class="navigation-links1-nav navigation-links1-root-class-name17"
+            >
+              <span class="navigation-links1-text"><span>About</span></span>
+              <span class="navigation-links1-text1"><span>Features</span></span>
+              <span class="navigation-links1-text2"><span>Pricing</span></span>
+              <span class="navigation-links1-text3"><span>Team</span></span>
+              <span class="navigation-links1-text4"><span>Contact</span></span>
+            </nav>
+          </div>
+          <div data-type="BurgerMenu" class="home-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="home-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-type="MobileMenu" class="home-mobile-menu">
+            <div class="home-nav1">
+              <div class="home-container1">
+                <img
+                  alt="image"
+                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                  class="home-image1"
+                />
+                <div data-type="CloseMobileMenu" class="home-close-mobile-menu">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav
+                class="navigation-links1-nav navigation-links1-root-class-name18"
+              >
+                <span class="navigation-links1-text"><span>About</span></span>
+                <span class="navigation-links1-text1">
+                  <span>Features</span>
+                </span>
+                <span class="navigation-links1-text2">
+                  <span>Pricing</span>
+                </span>
+                <span class="navigation-links1-text3"><span>Team</span></span>
+                <span class="navigation-links1-text4">
+                  <span>Contact</span>
+                </span>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="home-container2">
+          <h1 class="home-text">News summarizer</h1>
+        </div>
+        <span class="home-text01">
+          Get your news article summery from any website
+        </span>
+        <div class="home-container3"></div>
+        <div class="home-container4">
+          <form action="/predict" method="post" class="home-form">
+            <input
+              type="text"
+              placeholder="Paste news article URL here"
+              class="home-textinput itaalic input"
+              name = "URL"
+              id = "URL"
+              required
+            />
+            <!-- <div class="loader"></div> -->
+            <button class="home-button button">Generate</button>
+          </form>
+        </div>
+        <div class="home-container5">
+          
+          <h1 id="headline" class="home-text02">
+            {{ Title }}
+          </h1>
+          <span id="author" class="home-text03">
+            {{ Authors }}
+          </span>
+          <span id="publish" class="home-text05">
+            {{ Publication_Date }}
+          </span>
+          <span id="summary" class="home-text04">
+            <span>
+              {{ Summary }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
